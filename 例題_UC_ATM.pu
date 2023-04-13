@@ -1,0 +1,12 @@
+@startuml 例題1
+left to right direction
+actor 高橋洋平 #DDD;line:Green;line.bold;
+package ATM {
+usecase 預金する
+usecase 預金を引き出す
+usecase 残高照会する
+usecase 通帳記入する
+}
+高橋洋平 --> 預金する
+高橋洋平 --> 預金を引き出す
+@enduml

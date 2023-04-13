@@ -1,0 +1,24 @@
+@startuml 演習2-1
+left to right direction
+actor 申請者#BBA999;line:DeepPink;line.bold;
+actor 承認者#ACD123;line:AntiqueWhite;line.bold;
+actor 経理担当者#DAA142;line:Bisque;line.bold;
+actor 交通費精算システム#FFA;line:Beige;line.bold;
+rectangle 出張申請システム {
+usecase 出張申請を登録する#ACD
+usecase 出張申請を提出する#CBD
+usecase 出張申請を承認する#CCC
+usecase 出張申請を却下する#BBA
+usecase 出張申請を差し戻す#AAD
+usecase 出張申請を確認する#ADA
+
+}
+申請者--> 出張申請を登録する
+申請者--> 出張申請を提出する
+承認者--> 出張申請を承認する
+承認者--> 出張申請を却下する
+承認者--> 出張申請を差し戻す
+承認者--> 出張申請を確認する
+経理担当者--> 出張申請を確認する
+出張申請を登録する <-- 交通費精算システム
+@enduml

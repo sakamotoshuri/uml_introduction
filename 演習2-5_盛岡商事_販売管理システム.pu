@@ -1,0 +1,10 @@
+@startuml 例題1
+left to right direction
+actor 販売部 #DDD;line:Green;line.bold;
+rectangle 販売管理システム {
+usecase 注文商品を確認する
+usecase 出荷状況を登録する
+}
+販売部 --> 注文商品を確認する
+販売部 --> 出荷状況を登録する
+@enduml

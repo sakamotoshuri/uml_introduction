@@ -1,0 +1,7 @@
+@startuml ユースケース図
+rectangle 予約システム {
+usecase キャンペーン期間中に予約する
+usecase キャンペーン中
+}
+キャンペーン中<. キャンペーン期間中に予約する: <<extend>>
+@enduml

@@ -1,29 +1,29 @@
 @startuml 演習
 skinparam classAttributeIconSize 0
 class 空車リスト {
-- 属性1:int
-- 属性2:String
-+ 操作1():void
-+ 操作2():String
+- 属性1:String
++ 操作1():String
 }
 class 車 {
 - 属性1:String
-- 属性2:String
 + 操作1():String
-+ 操作2():String
 }
 class 顧客 {
 - 属性1:String
 - 属性2:String
+- 属性3:String
+- 属性4:String
 + 操作1():String
 + 操作2():String
++ 操作3():String
++ 操作4():String
 }
 class 予約 {
 - 属性1:int
 + 操作1():void
 }
 class 貸出 {
-- 属性1:String
-+ 操作1():String
+- 属性1:int
++ 操作1():void
 }
 @enduml

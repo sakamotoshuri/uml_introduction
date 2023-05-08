@@ -1,10 +1,23 @@
-@startuml 課題
-interface 従業員 {
+@startuml 演習
+class 社員 {
+- 社員ID:int
+- 名前:String
+- 雇用形態: String
 }
-class 派遣 {}
-class 契約社員{}
-class 正社員{}
-従業員 <|-- 派遣
-従業員 <|-- 契約社員
-従業員 <|-- 正社員
+
+class 契約社員{
+
+}
+
+class 派遣{
+
+}
+
+class 正社員{
+
+}
+
+社員 <|-down- 派遣
+社員 <|-down- 契約社員
+社員 <|-down- 正社員
 @enduml

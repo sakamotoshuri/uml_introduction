@@ -1,0 +1,13 @@
+@startuml 演習
+hide footbox
+participant ":フロア店員" as clark
+participant ":料理人" as cooker
+activate cooker
+activate clark
+clark -> cooker: 料理を指示する
+activate cooker
+cooker -> cooker: 料理をする
+deactivate cooker
+deactivate clark
+deactivate cooker
+@enduml

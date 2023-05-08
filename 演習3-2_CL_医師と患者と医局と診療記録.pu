@@ -1,0 +1,22 @@
+@startuml 演
+left to right direction
+class 医師{
+    -医師ID:int
+    -名前:String
+    -医局:String
+}
+
+class 患者{
+    -患者ID:int
+    -医師ID:int
+    -名前:String
+}
+
+class 医局{
+    局ID:int
+    局名:String
+}
+
+患者 "*"--"1" 医師
+医局 "1"--"*" 医師
+@enduml

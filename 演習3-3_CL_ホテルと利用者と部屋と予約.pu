@@ -1,0 +1,29 @@
+@startuml 演習
+left to right direction
+class 利用者{
+    -名前
+    -住所
+    -電話番号
+    }
+
+class ホテル{
+    -部屋
+}
+
+class 部屋{
+    -タイプ
+    -価格
+    -キャンペーン価格
+}
+
+class 予約{
+    -チェックイン日
+    -滞在期間
+    -値段
+}
+
+予約 *- 利用者
+ホテル -left- 利用者
+予約 - 部屋
+ホテル o- 部屋
+@enduml

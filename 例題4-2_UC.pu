@@ -1,0 +1,9 @@
+@startuml k
+hide footbox
+participant ":ログインコントローラ" as control
+participant "会員情報" as entity
+create entity
+control -> entity:<<作成>>
+control <- entity
+destroy entity
+@enduml

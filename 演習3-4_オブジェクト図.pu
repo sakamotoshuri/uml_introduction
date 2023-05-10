@@ -1,0 +1,39 @@
+@startuml 演習
+    left to right direction
+    object "<u>車一覧:車</u>" as car1{
+        車種
+    }
+    object "<u>車一覧:車</u>" as car2{
+        車種
+    }
+    object "<u>タイヤ一覧:タイヤ</u>" as tire1{
+        オールシーズンタイヤ
+        メーカー
+        サイズ
+        価格
+    }
+    object "<u>タイヤ一覧:タイヤ</u>" as tire2{
+        スタッドレスタイヤ
+        メーカー
+        サイズ
+        価格
+    }
+        object "<u>タイヤ一覧:タイヤ</u>" as tire3{
+        コンフォートタイヤ
+        メーカー
+        サイズ
+        価格
+    }
+        object "<u>タイヤ一覧:タイヤ</u>" as tire4{
+        スポーツタイヤ
+        メーカー
+        サイズ
+        価格
+    }
+    car1 -- tire2
+    car1 -- tire3
+    car1 -- tire4
+    car2 -- tire1 
+    car2 -- tire2
+
+@enduml

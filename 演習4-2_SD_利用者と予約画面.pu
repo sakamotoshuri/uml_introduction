@@ -1,13 +1,14 @@
 @startuml 演習
 hide footbox
-participant ":フロア店員" as clark
-participant ":料理人" as cooker
-activate cooker
-activate clark
-clark -> cooker: 料理を指示する
-activate cooker
-cooker -> cooker: 料理をする
-deactivate cooker
-deactivate clark
-deactivate cooker
+participant ":利用者クラス" as user
+participant ":予約画面クラス" as admin
+activate user
+user -> admin: ログインを行う（）
+note right of user : 非同期
+activate admin
+admin -> admin: 確認操作（）
+note right of admin : 同期
+activate admin
+deactivate admin
+deactivate user
 @enduml

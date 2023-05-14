@@ -1,0 +1,15 @@
+@startuml 演習
+hide footbox
+participant ":データ更新コントローラ" as controller
+participant ":ホテル" as hotel
+participant ":予約" as reserve
+activate controller
+controller -> hotel : 予約操作を呼び出す
+activate hotel
+hotel -> reserve : 予約オブジェクトを作成する
+activate reserve
+hotel -> hotel : 予約登録操作を行う
+activate hotel
+deactivate hotel
+deactivate controller
+@enduml

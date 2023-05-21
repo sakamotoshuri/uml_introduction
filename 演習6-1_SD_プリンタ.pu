@@ -1,0 +1,10 @@
+@startuml 演習
+[*] -right-> 待機中:　電源オン
+state c <<choice>>
+state c <<choice>>
+待機中-down-> c
+c --> 用紙なし
+c -right-> 印刷中
+用紙なし--> 印刷中:　用紙をセット
+印刷中-right-> [*]
+@enduml

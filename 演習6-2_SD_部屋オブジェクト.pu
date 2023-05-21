@@ -1,0 +1,11 @@
+@startuml 演習
+state 未使用 {
+    state 空室
+    state 予約済み
+}
+    state 使用中
+空室 -left-> 予約済み:　キャンセル
+予約済み -right-> 空室:　予約
+空室 --> 使用中:　使用
+使用中 --> 予約済み:　使用終了
+@enduml

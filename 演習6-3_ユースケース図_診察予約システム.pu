@@ -3,15 +3,14 @@ left to right direction
 actor 患者#DDDDDD;line:black;line.bold;
 actor 看護師#DDDDDD;line:black;line.bold;
 rectangle 診察予約システム {
-usecase ユーザを登録する << U1 >>
-usecase ユーザを認証する << U2 >>
-usecase 図書を検索する << U3 >>
-usecase 貸出をうける << U4 >>
+usecase メニュー
+usecase 予約と確認
+usecase あなたの順番
+usecase 今の順番
 }
-患者--> ユーザを登録する : 登録する
-患者---> ユーザを認証する : 認証する
-患者---> 図書を検索する : 検索する
-患者--> 貸出をうける : 貸出する
-ユーザを登録する <-- 看護師 : 登録する
-貸出をうける <-- 看護師 : 貸出する
+患者--> メニュー
+患者--> 予約と確認
+患者--> あなたの順番
+患者--> 今の順番
+今の順番 <-- 看護師
 @enduml

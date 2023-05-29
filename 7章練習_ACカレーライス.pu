@@ -1,0 +1,42 @@
+@startuml 演習
+title カレーライス
+start
+:食材を用意する;
+fork
+:お米を洗う;
+:お米を炊く;
+fork again
+:野菜を洗う;
+-> 水分をきる;
+:野菜の皮をむく;
+note right
+注釈
+ジャガイモの芽を取り除く。
+end note
+:野菜と肉を切る;
+-> 一口大に切る;
+:フライパンに油をひく;
+:肉を炒める;
+note right
+注釈
+中火で炒める。
+end note
+:野菜を加える;
+note right
+注釈
+玉ねぎが透き通るまで炒める。
+end note
+:水を加える;
+note right
+注釈
+１５分～２０分煮込む。
+end note
+:ルーを加える;
+note right
+注釈
+完全に溶かしながら１０分煮込む。
+end note
+end fork
+:お皿に盛る;
+stop
+@enduml

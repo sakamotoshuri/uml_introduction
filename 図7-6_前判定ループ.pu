@@ -1,0 +1,10 @@
+@startuml ループ処理
+title 前判定ループ
+start
+:アクティビティA;
+while (i < 10)
+:アクティビティB;
+endwhile
+:アクティビティC;
+stop
+@enduml

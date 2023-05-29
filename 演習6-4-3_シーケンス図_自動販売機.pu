@@ -1,0 +1,22 @@
+@startuml 演習
+actor "<u>:客</u>" as user
+hide footbox
+participant "<u>:料金装置</u>" as money
+participant "<u>:ボタン</u>" as button
+participant "<u>:ベンダー装置</u>" as vendor
+activate user
+activate money
+user -> money :料金を入れる
+activate button
+money -> button :商品ボタンが光る
+user <<-- button
+user -> button :ボタンを押す
+activate vendor
+button -> vendor :ドリンクの種類の信号
+vendor -> vendor :ドリンクを排出する
+user <<-- vendor :ドリンク
+deactivate vendor
+deactivate button
+deactivate money
+deactivate user
+@enduml

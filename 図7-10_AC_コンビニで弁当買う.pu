@@ -1,0 +1,26 @@
+@startuml アクティビティ図の例
+|客|
+|店員|
+|店員|
+|店員|
+|客|
+start
+:弁当をレジに持っていく;
+|店員|
+fork
+|客|
+:お金を支払う;
+|客|
+|店員|
+:精算する;
+fork again
+:action D;
+|店員|
+:action F;
+|店員|
+end fork
+|客|
+:action G;
+stop
+|客|
+@enduml

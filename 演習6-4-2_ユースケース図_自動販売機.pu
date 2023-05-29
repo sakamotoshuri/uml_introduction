@@ -1,0 +1,15 @@
+@startuml 演習
+left to right direction
+actor 客#DDDDDD;line:black;line.bold;
+actor ベンダー#DDDDDD;line:black;line.bold;
+rectangle 診察予約システム {
+usecase 料金を入れる
+usecase ボタンを押す
+usecase ドリンクを取り出す
+}
+客-- 料金を入れる
+客-- ボタンを押す
+客-- ドリンクを取り出す
+料金を入れる-- ベンダー
+ドリンクを取り出す-- ベンダー
+@enduml

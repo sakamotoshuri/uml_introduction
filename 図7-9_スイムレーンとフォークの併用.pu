@@ -1,0 +1,30 @@
+@startuml アクティビティ図の例
+|ユーザ1|
+|ユーザ1|
+|ユーザ2|
+|ユーザ2|
+|ユーザ3|
+|ユーザ3|
+|ユーザ2|
+start
+:action A;
+fork
+|ユーザ2|
+|ユーザ1|
+:action B;
+:action C;
+|ユーザ1|
+|ユーザ2|
+:action E;
+fork again
+:action D;
+|ユーザ2|
+|ユーザ3|
+:action F;
+|ユーザ3|
+|ユーザ2|
+end fork
+:action G;
+stop
+|ユーザ2|
+@enduml

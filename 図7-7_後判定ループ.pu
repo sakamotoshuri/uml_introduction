@@ -1,0 +1,10 @@
+@startuml ループ処理
+title 後判定ループの例
+start
+:アクティビティA;
+repeat
+:アクティビティB;
+repeat while (i < 10) -> [No]
+:アクティビティC;
+stop
+@enduml

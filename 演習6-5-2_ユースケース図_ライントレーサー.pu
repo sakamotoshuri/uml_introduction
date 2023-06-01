@@ -1,0 +1,12 @@
+@startuml 演習
+left to right direction
+actor 客
+actor 光センサー
+actor 左右モーター
+rectangle ライントレーサー {
+usecase ラインの右境界線上を進む
+}
+客-- ラインの右境界線上を進む
+ラインの右境界線上を進む -- 光センサー
+ラインの右境界線上を進む -- 左右モーター
+@enduml

@@ -1,0 +1,10 @@
+@startuml 演習
+title ホテル宿泊予約システム
+start
+repeat
+:ユーザー名を入力;
+:パスワードを入力;
+repeat while (認証) -> [失敗]
+:予約;
+stop
+@enduml

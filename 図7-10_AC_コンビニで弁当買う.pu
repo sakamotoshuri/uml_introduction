@@ -14,13 +14,15 @@ fork
 |店員|
 :精算する;
 fork again
-:action D;
-|店員|
-:action F;
+if (温めますか？) then (Yes)
+    :弁当を温める;
+else (No)
+endif
+:弁当を袋に入れる;
 |店員|
 end fork
 |客|
-:action G;
+:弁当を手もつ;
 stop
 |客|
 @enduml
